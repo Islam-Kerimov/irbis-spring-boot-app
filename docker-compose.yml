@@ -4,6 +4,8 @@ services:
     container_name: app
     build: .
     restart: always
+    volumes:
+      - ./report-info:/report-info
     ports:
       - "8080:8080"
     depends_on:
